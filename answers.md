@@ -62,3 +62,46 @@ Go – High-performance language for backend and cloud applications.
     print_r($result);
 
     ?>
+
+
+
+ 2.    
+    <?php
+
+    function toPigLatin($text) {
+        $words = explode(' ', $text);
+        $translatedWords = [];
+
+        foreach ($words as $word) {
+            $firstLetter = substr($word, 0, 1);
+            $restOfWord = substr($word, 1);
+            $translatedWords[] = $restOfWord . $firstLetter . 'ay';
+        }
+
+        return implode(' ', $translatedWords);
+    }
+
+    function fromPigLatin($text) {
+        $words = explode(' ', $text);
+        $originalWords = [];
+
+        foreach ($words as $word) {
+            $wordWithoutAy = substr($word, 0, -2); 
+            $lastLetter = substr($wordWithoutAy, -1);
+            $restOfWord = substr($wordWithoutAy, 0, -1);
+            $originalWords[] = $lastLetter . $restOfWord;
+        }
+
+        return implode(' ', $originalWords);
+    }
+
+    $englishText = "have a great day";
+    $pigLatin = toPigLatin($englishText);
+    $translatedBack = fromPigLatin($pigLatin);
+
+    echo "Original: $englishText\n";
+    echo "Pig Latin: $pigLatin\n";
+    echo "Back to English: $translatedBack\n";
+
+    ?>
+
