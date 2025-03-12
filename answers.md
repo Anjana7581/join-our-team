@@ -104,4 +104,27 @@ Go – High-performance language for backend and cloud applications.
     echo "Back to English: $translatedBack\n";
 
     ?>
+    
 
+3. 
+    <?php
+
+    function rotateArray(&$arr, $k) {
+        $n = count($arr);
+        $k = $k % $n; 
+
+        for ($i = 0; $i < $k; $i++) {
+            $firstElement = array_shift($arr);
+            array_push($arr, $firstElement);
+        }
+    }
+
+    $array = [1, 2, 3, 4, 5, 6];
+    $k = 1;
+
+    rotateArray($array, $k);
+
+    echo "Rotated Array: ";
+    print_r($array);
+
+    ?>
