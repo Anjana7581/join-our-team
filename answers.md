@@ -33,3 +33,14 @@ Python – Useful for backend development,automation, and AI/ML.
 Angular – A powerful front-end framework for building dynamic web applications.
 
 Go – High-performance language for backend and cloud applications.
+
+
+
+## Social Profile
+
+1. GitHub Profile
+  https://github.com/Anjana7581
+
+2. LinkedIn Profile
+  https://www.linkedin.com/in/anjana-george-126b97280/
+
