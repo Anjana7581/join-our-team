@@ -44,3 +44,21 @@ Go – High-performance language for backend and cloud applications.
 2. LinkedIn Profile
   https://www.linkedin.com/in/anjana-george-126b97280/
 
+
+
+## The Real Stuff.
+
+1. 
+    <?php
+
+    function numberToDigits($num) {
+        return array_map('intval', str_split($num));
+    }
+
+    $number = 12345;
+    $result = numberToDigits($number);
+
+    echo "Digits of {$number}:\n";
+    print_r($result);
+
+    ?>
