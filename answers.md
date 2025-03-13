@@ -128,3 +128,15 @@ Go – High-performance language for backend and cloud applications.
     print_r($array);
 
     ?>
+
+
+4. Option 1 - __User Designation Management System__
+ GitHub Repository: 
+        https://github.com/Anjana7581/DesignationManagement
+
+ Future Enhancements:
+    - Implement a user authentication system.
+    - Add an admin dashboard with analytics.
+    - Optimize the website for better performance.
+    - Add more customization options.
+
